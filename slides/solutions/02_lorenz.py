@@ -1,4 +1,6 @@
-x, y, z = mgrid[-50:50:20j,-50:50:20j, -10:60:20j]
+import numpy as np
+from mayavi import mlab
+x, y, z = np.mgrid[-50:50:20j,-50:50:20j, -10:60:20j]
 u, v, w = lorenz(x, y, z)
 
 mlab.clf()
